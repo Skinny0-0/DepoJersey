@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Pagina De Noticia De Tecnologia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda DepoJersey</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="productos.html">Productos</a></li>
+      </ul>
+    </nav>
+    <section class="busqueda">
+      <input type="text" id="buscador"
+        placeholder="buscar producto🔍..."
+        oninput="filtrar producto()"/>
+    </section>
+  </header>
+  <main>
+  <h2>Bienvenidos A La Tienda DepoJersey En Linea</h2>
+  <p>Encuentra Los Mejores Productos Al Mejor Precio</p>
+  <section class="ofertas"></section>
+<center>
+  <h2>Ofertas Del Dia</h2>
+  <div class="productos"></div>
+  <figure class="producto">
+    <img src="Imagenes/CHIVAS.jpg" alt="Jersey Chivas">
+    <figcaption>
+      <h3>Jersey Chivas Local 24-25</h3>
+      <p class="descripcion">Jersey Club Deportivo Guadalajara</p>
+      <p class="precio de oferta"><del>$1,789</del> $900</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button tton onclick="agregarAlCarrito('Jersey Chivas',$900)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+<figure class="producto">
+    <img src="Imagenes/Toluca.jpg" alt="Jersey Toluca">
+    <figcaption>
+      <h3>Jersey Toluca Local 24-25</h3>
+      <p class="descripcion">Jersey Toluca</p>
+      <p class="precio de oferta"><del>$2,200</del> $1,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregarAl Carrito('Jersey Toluca',$1,350)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Chivas3.jpeg" alt="Jersey Chivas Tercer Equipo 24-25">
+    <figcaption>
+      <h3>Tercer Jersey Chivas 24-25</h3>
+      <p class="descripcion">Tercera equipacion chivas</p>
+      <p class="precio de oferta"><del>$1,900</del> $1,500</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregarAlCarrito('Jersey Chivas Tercero',$1,500)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/CruzAzul.jpeg" alt="Tarola yamaha">
+    <figcaption>
+      <h3>Jersey Cruz Azul Local 24-25</h3>
+      <p class="descripcion">Jersey cruz azul </p>
+      <p class="precio de oferta"><del>$1,600</del> $1,400</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Jersey Cruz Azul',$1,400)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Pachuca.jpeg" alt="Jersey Pachuca">
+    <figcaption>
+      <h3>Jersey Pachuca Local 24-25</h3>
+      <p class="descripcion"> Jersey Local Pachuca</p>
+      <p class="precio de oferta"><del>$1,000</del> $600</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Jersey Pachuca',$600)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Monterrey.jpeg" alt="Jersey Monterrey">
+    <figcaption>
+      <h3>Jersey Monterrey Local 24-25</h3>
+      <p class="descripcion">Jersey Monterrey</p>
+      <p class="precio de oferta"><del>$2,000</del> $1,000</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Jersey Monterrey',$1,000)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Toluca3.jpeg" alt="Jersey Toluca">
+    <figcaption>
+      <h3>Jersey Toluca Tercero 24-25</h3>
+      <p class="descripcion">Jersey Toluca Tercer Equipacion</p>
+      <p class="precio de oferta"><del>$1,800</del> $1,600</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Jersey Toluca',$1,600)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Leon.jpeg" alt="Jersey Leon Local">
+    <figcaption>
+      <h3>Jersey Leon Local 24-25</h3>
+      <p class="descripcion">Jersey Leon</p>
+      <p class="precio de oferta"><del>$1,879</del> $1,500</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Jersey Leon',$1,500)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/BalonLiga.jpeg" alt="Balon Liga Mx">
+    <figcaption>
+      <h3>BALON LIGA MX FINAL</h3>
+      <p class="descripcion">Balon oficial de la liga mx</p>
+      <p class="precio de oferta"><del>$1,700</del> $1,650</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Balon Liga MX',$1,650)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
+    <figure class="producto">
+    <img src="Imagenes/Tigres.jpeg" alt="Jersey Tigres">
+    <figcaption>
+      <h3>Jersey Tigres Local 24-25</h3>
+      <p class="descripcion">Jersey Tigras Local 24-25</p>
+      <p class="precio de oferta"><del>$2,000</del> $1,600</p>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <button onclick="agregar al carrito('Jersey Chivas',$1,600)">
+        Agregar al carrito</button>
+    </figcaption>
+  </figure>
